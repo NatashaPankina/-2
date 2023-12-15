@@ -44,7 +44,7 @@ def from_db_to_excel(values):
     
 @app.route('/', methods=['GET', 'POST'])
 def start_page():
-    return render_template('first.html', name="Олимпиады и олимпиадники")
+    return render_template('first.html', title="Олимпиады и олимпиадники")
 
 
 @app.route('/uploads/<filename>', methods=['GET', 'POST'])
